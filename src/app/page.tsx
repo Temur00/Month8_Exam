@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="container mx-auto h-screen">
+    <div className="container mx-auto h-min-screen">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
         reprehenderit cum, officia ut earum libero animi natus similique.
