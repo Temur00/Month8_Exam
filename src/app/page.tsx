@@ -1,121 +1,250 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+
+import { TbTruckDelivery } from "react-icons/tb";
+import { FaRegCheckCircle } from "react-icons/fa";
+import { CiCreditCard1 } from "react-icons/ci";
+import { PiPlantBold } from "react-icons/pi";
+
+import { DandyChair, HomeLast, PopSofa } from "@/assets";
 
 const Home = () => {
   return (
-    <div className="container mx-auto h-min-screen">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-        reprehenderit cum, officia ut earum libero animi natus similique.
-        Sapiente facilis, reprehenderit fugiat suscipit, doloremque architecto
-        amet in iste, doloribus at cupiditate illum ipsam repudiandae ipsa
-        temporibus accusantium dolorum quis rerum debitis! Reiciendis provident
-        ratione ea totam id blanditiis, earum ab cumque ipsam incidunt
-        repellendus sint doloremque tempora, esse veniam iure rem perspiciatis
-        corrupti possimus nam et adipisci. Ullam architecto minus ut excepturi
-        quaerat id, ab fugit ipsam quod unde eius dolorum, qui voluptates nobis
-        sed perspiciatis laudantium doloribus dolores cupiditate eaque libero?
-        Harum minima vitae mollitia quos asperiores provident eligendi quibusdam
-        sunt ut placeat molestiae at, accusamus possimus neque, tempora quam
-        aperiam reprehenderit. Eum dolor eius, quibusdam ducimus velit est iure
-        eos culpa distinctio blanditiis impedit repudiandae dolorum rerum
-        deleniti nemo minus cumque quia recusandae amet suscipit nulla cum!
-        Voluptate beatae fugit omnis quibusdam asperiores! Dolorem, eaque
-        expedita tempora debitis illum, dignissimos dolore doloribus
-        voluptatibus maxime laudantium optio aspernatur culpa dicta tempore
-        possimus id accusamus fuga error nobis aliquam adipisci nam, vero quae!
-        Iure nostrum quam, accusamus iusto unde quaerat corrupti pariatur
-        obcaecati sunt debitis voluptatem, quas hic ipsum earum ab! Accusamus,
-        cum? Explicabo deleniti id modi quas voluptatem quaerat quis sed
-        laudantium, porro ab dolores et, dolor perferendis in! Rerum est
-        assumenda nulla numquam minima! Quas molestiae, mollitia alias error
-        fugiat architecto maiores repellendus esse, magnam omnis voluptatum at
-        voluptatibus corrupti accusamus nostrum rem. Tempore dolores, beatae vel
-        nam et exercitationem consequuntur velit! Est expedita recusandae
-        reprehenderit impedit excepturi magnam unde delectus laboriosam, porro
-        voluptatem sint reiciendis voluptatibus, officiis dolore. Architecto
-        obcaecati magni eveniet eius error iste recusandae, laborum laudantium
-        ullam laboriosam iure totam voluptas quam fugit nihil voluptates. Saepe
-        nisi adipisci quo, ratione, sapiente laboriosam voluptate libero
-        aspernatur sit, voluptatem officia eos. Mollitia eum illo qui quae,
-        corrupti omnis ad quas ipsa magnam placeat tempora provident
-        necessitatibus voluptatibus eaque magni molestiae quaerat sunt nobis
-        voluptas, quo quidem deleniti sed nemo. Quos doloribus quisquam tenetur
-        quod suscipit quasi veniam id voluptas pariatur. Natus velit, voluptate
-        voluptatem dolore libero inventore labore rerum dolorum earum optio
-        laudantium maiores quo aspernatur! Ab sint repellendus officia
-        reiciendis porro. Ex repudiandae facere, pariatur praesentium iusto
-        accusantium nemo blanditiis doloribus quos? Illo accusantium repudiandae
-        excepturi nihil in eius consectetur sunt quis. Ut nam reiciendis
-        incidunt sed dignissimos voluptatem perspiciatis optio sapiente odit
-        fuga nisi cupiditate eos beatae, amet nobis earum rerum sit molestiae
-        laboriosam alias eius soluta. Ea nihil eius necessitatibus, blanditiis
-        praesentium veritatis quidem illo voluptatem eum minus commodi
-        doloremque a sit asperiores accusamus laboriosam possimus quam suscipit
-        rem aut cum vel saepe. Aliquid ipsa porro aspernatur quos aut
-        necessitatibus odit saepe, quidem reiciendis facere neque inventore,
-        aliquam, eaque nisi tempore fugiat doloremque corrupti? Perferendis
-        reprehenderit cum eveniet consequatur dolore eos. Vel quidem ab dolore
-        vero aliquam fugiat ea veritatis deserunt obcaecati tenetur ipsam
-        repellendus, aliquid maiores error suscipit. Optio veniam, aut corporis
-        cupiditate at id vitae, aliquam non ex sed, inventore amet suscipit.
-        Dolores, ducimus consequuntur quidem libero voluptates praesentium,
-        aliquam dolor, sapiente totam quisquam nostrum delectus ex molestiae
-        maxime repellat quos. Impedit esse magnam, nesciunt, aliquam fugiat
-        sapiente illum, qui ratione odit itaque libero neque distinctio delectus
-        consequatur nulla dignissimos. Suscipit repellendus placeat cupiditate
-        fugiat a officiis sed optio laborum ipsa, enim neque ducimus vel nulla
-        officia? Ex ipsam autem voluptatibus ducimus est aperiam assumenda
-        veritatis accusantium quaerat illo tempore quos, cumque provident. A
-        dicta voluptate fugiat nihil. Vel inventore commodi blanditiis esse
-        exercitationem fuga sapiente hic possimus quisquam, at reprehenderit
-        cupiditate ut, dicta labore aperiam quibusdam similique! Delectus
-        debitis quidem molestias libero rem pariatur ipsam labore saepe, ea hic
-        consequatur ut atque eos beatae porro quam totam at? Officia inventore
-        repellat odio corrupti labore, tempora aut corporis pariatur et,
-        exercitationem eos ipsa nihil quia facilis voluptate temporibus. Rerum
-        dolore aspernatur quidem doloremque. Eligendi, totam explicabo modi ut
-        optio aut consequuntur rerum quis debitis maxime nulla? Reiciendis
-        pariatur quibusdam tempora, rerum eligendi maiores neque temporibus
-        ratione. Sint ullam, aliquam quaerat, harum debitis et dolor eaque
-        accusantium, velit aut expedita consectetur veritatis. Impedit odio,
-        sint asperiores cupiditate tempora architecto, facere ducimus est quos
-        labore nam eum. Omnis atque facilis amet nulla vel! Natus atque numquam
-        commodi, iste veritatis accusantium autem aliquam cupiditate provident
-        corrupti ut dolorum voluptatibus ad magni, dicta ab nobis aperiam,
-        perspiciatis iure cum id. Ipsum unde rerum eaque? Doloremque suscipit
-        dolorum vitae facilis deleniti exercitationem molestias nostrum dolore
-        pariatur ex cumque consequuntur molestiae nesciunt itaque, eveniet
-        ratione ea odit explicabo eum. Sint, quae magni. Fuga, mollitia. Animi
-        est dolorem nesciunt illo perferendis repellat porro, velit sit dicta
-        dolore sint perspiciatis quis tenetur consequuntur amet incidunt
-        adipisci saepe! Quaerat, laudantium fuga odit unde magnam distinctio
-        cupiditate voluptates deleniti veniam minima tempora id? Repellat
-        doloremque eius quos, beatae, magni placeat impedit cumque odit earum
-        praesentium quia maiores inventore voluptatum expedita numquam at sequi?
-        Vel, enim. Animi nihil eum eos odio modi nulla, debitis eligendi ea
-        tenetur reprehenderit unde voluptate sapiente libero, quod quos error,
-        veniam impedit facere quas ratione magnam! Voluptas beatae cumque hic,
-        quaerat libero odio illo quibusdam aliquam vero! Vitae fugit aliquam
-        temporibus reiciendis incidunt nulla consequuntur quis totam laborum,
-        mollitia neque eius maiores eveniet nostrum esse necessitatibus eos aut.
-        Animi explicabo architecto, sapiente voluptatum quos dignissimos.
-        Cupiditate recusandae deleniti at non, quae ipsam et dolor praesentium
-        rem beatae possimus quam quasi vitae itaque molestiae accusantium
-        repudiandae inventore consequatur iure nulla impedit? Explicabo culpa
-        exercitationem dolores autem? Sequi modi cum totam, reprehenderit magni
-        fugit at qui inventore voluptates laudantium autem. At tempore sapiente
-        itaque asperiores animi molestias doloribus sunt rerum ullam! Quo neque,
-        earum minus delectus quia rem rerum repellendus, totam, modi enim
-        officiis corrupti laudantium aliquam necessitatibus nobis facere.
-        Laborum officia ipsum ad animi, totam repudiandae soluta deleniti odio
-        pariatur unde harum, eveniet laudantium accusamus sunt! Obcaecati a
-        quisquam maxime deserunt accusamus. Nulla ipsa illum voluptate facilis
-        natus accusamus modi eius itaque tempora quod incidunt sequi similique
-        quis, molestias vero pariatur eveniet dolores ducimus officiis. Deleniti
-        quibusdam, fugiat magni molestias quasi, asperiores tempore modi
-        necessitatibus libero voluptatum, placeat quisquam.
-      </p>
-    </div>
+    <main className="container mx-auto lg:px-[62px] px-[20px]">
+      <section className="justify-center flex  md:py-[50px] pt-[0px] pb-[20px]">
+        <div className="bg-[#1a253c] max-w-[750px] md:p-10 sm:p-8 p-4">
+          <p className="sm:text-[32px] text-[24px] leading-10 text-white pb-8">
+            The furniture brand for the future, with timeless designs
+          </p>
+          <button className="w-[342px] hidden sm:block  text-[#fff] bg-[#f9f9f93c]  px-8 py-4 sm:w-[220px]">
+            View collection
+          </button>
+          <p className="text-[18px] leading-7 lg:pt-[150px] xl:pt-[200px] md:pt-[80px]  pt-[30px] text-white">
+            A new era in eco friendly furniture with Avelon, the French luxury
+            retail brand with nice fonts, tasteful colors and a beautiful way to
+            display things digitally using modern web technologies.
+          </p>
+          <Link href={"#"}>
+            <button className="w-[232px] mx-auto  block sm:hidden mt-[32px] text-[#fff] bg-[#f9f9f93c]  px-8 py-4 sm:w-[220px]">
+              View collection
+            </button>
+          </Link>
+        </div>
+        <div className="hidden md:block">
+          <Image
+            src={DandyChair}
+            alt="DandyChair"
+            className=" h-full w-[474px] min-w-[280px]"
+          />
+        </div>
+      </section>
+      <section>
+        <p className="pb-[21px] md:pt-[100px] sm:pt-[70px] pt-[40px] dark:text-slate-200 text-2xl text-center text-[#1a253c]">
+          What makes our brand different
+        </p>
+        <div className="flex flex-wrap justify-center gap-8 px-4 py-4">
+          <div className="group w-[342px] md:w-[270px] p-3 rounded-md hover:shadow-2xl hover:z-10 duration-200 ">
+            <TbTruckDelivery className="text-[24px] group-hover:text-cyan-700 duration-200" />
+            <p className="text-xl  text-[#1a253c] dark:text-slate-300 pt-4">
+              Next day as standard
+            </p>
+            <p className="text-[16px]  text-[#1a253c] dark:text-slate-300 pt-2">
+              Order before 3pm and get your order the next day as standard
+            </p>
+          </div>
+          <div className="group w-[342px] md:w-[270px]  p-4 rounded-md hover:shadow-2xl hover:z-10 duration-200">
+            <FaRegCheckCircle className="group-hover:text-green-500 text-[24px] duration-200" />
+            <p className="text-xl  text-[#1a253c] dark:text-slate-300 pt-4">
+              Made by true artisans
+            </p>
+            <p className="text-[16px]  text-[#1a253c] dark:text-slate-300 pt-2">
+              Handmade crafted goods made with real passion and craftmanship
+            </p>
+          </div>
+          <div className="group w-[342px] md:w-[270px]  p-4 rounded-md hover:shadow-2xl hover:z-10 duration-200">
+            <CiCreditCard1 className="group-hover:text-yellow-300 text-[24px] duration-200" />
+            <p className="text-xl  text-[#1a253c] dark:text-slate-300 pt-4">
+              Unbeatable prices
+            </p>
+            <p className="text-[16px]  text-[#1a253c] dark:text-slate-300 pt-2">
+              For our materials and quality you won’t find better prices
+              anywhere
+            </p>
+          </div>
+          <div className="group w-[342px]  md:w-[270px]  p-4 rounded-md hover:shadow-2xl hover:z-10 duration-200">
+            <PiPlantBold className="text-[24px] group-hover:text-green-500 duration-200" />
+            <p className="text-xl  text-[#1a253c] dark:text-slate-300 pt-4">
+              Recycled packaging
+            </p>
+            <p className="text-[16px]  text-[#1a253c] dark:text-slate-300 pt-2">
+              We use 100% recycled packaging to ensure our footprint is
+              manageable
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col">
+        <p className=" text-[#1a253c] dark:text-slate-300 flex justify-center md:justify-start md:pt-[80px] text-3xl">
+          New ceramics
+        </p>
+        <div className=" flex flex-wrap justify-center py-[20px] sm:py-[34px] gap-3 sm:gap-5">
+          <div>
+            <Image
+              src={DandyChair}
+              alt="DandyChair"
+              className="w-[163px] sm:w-[300px] h-[201px] sm:h-[375px]"
+            />
+            <p className="text-[#1a253c] dark:text-slate-300 pt-6 text-[20px]">
+              The Dandy chair{" "}
+            </p>
+            <p className="text-[#1a253c] dark:text-slate-300 pt-2 text-[18px]">
+              £250
+            </p>
+          </div>
+          <div>
+            <Image
+              src={DandyChair}
+              alt="DandyChair"
+              className="w-[163px] sm:w-[300px] h-[201px] sm:h-[375px]"
+            />
+            <p className="text-[#1a253c] dark:text-slate-300 pt-6 text-[20px]">
+              The Dandy chair{" "}
+            </p>
+            <p className="text-[#1a253c] dark:text-slate-300 pt-2 text-[18px]">
+              £250
+            </p>
+          </div>
+          <div>
+            <Image
+              src={DandyChair}
+              alt="DandyChair"
+              className="w-[163px] sm:w-[300px] h-[201px] sm:h-[375px]"
+            />
+            <p className="text-[#1a253c] dark:text-slate-300 pt-6 text-[20px]">
+              The Dandy chair{" "}
+            </p>
+            <p className="text-[#1a253c] dark:text-slate-300 pt-2 text-[18px]">
+              £250
+            </p>
+          </div>
+          <div>
+            <Image
+              src={DandyChair}
+              alt="DandyChair"
+              className="w-[163px] sm:w-[300px] h-[201px] sm:h-[375px]"
+            />
+            <p className="text-[#1a253c] dark:text-slate-300 pt-6 text-[20px]">
+              The Dandy chair{" "}
+            </p>
+            <p className="text-[#1a253c] dark:text-slate-300 pt-2 text-[18px]">
+              £250
+            </p>
+          </div>
+        </div>
+        <button className="w-[260px]  mx-auto  bg-gray-300 text- text-[#1a253c] dark:bg-[#f9f9f93c]  px-8 py-4 sm:w-[220px]">
+          View collection
+        </button>
+      </section>
+      <section className="flex flex-col">
+        <p className=" text-[#1a253c] dark:text-slate-300 flex justify-center md:justify-start md:pt-[80px] pt-12 md:text-3xl text-2xl">
+          Our popular products
+        </p>
+        <div className=" flex flex-wrap justify-center py-[20px] sm:py-[34px] gap-3 sm:gap-5">
+          <div>
+            <Image
+              src={PopSofa}
+              alt="DandyChair"
+              className="w-[200px] sm:w-[630px] h-[221px] sm:h-[375px]"
+            />
+            <p className="text-[#1a253c] dark:text-slate-300 pt-6 text-[20px]">
+              The Dandy chair{" "}
+            </p>
+            <p className="text-[#1a253c] dark:text-slate-300 pt-2 text-[18px]">
+              £250
+            </p>
+          </div>
+          <div>
+            <Image
+              src={DandyChair}
+              alt="DandyChair"
+              className="w-[200px] sm:w-[300px] h-[221px] sm:h-[375px]"
+            />
+            <p className="text-[#1a253c] dark:text-slate-300 pt-6 text-[20px]">
+              The Dandy chair{" "}
+            </p>
+            <p className="text-[#1a253c] dark:text-slate-300 pt-2 text-[18px]">
+              £250
+            </p>
+          </div>
+          <div>
+            <Image
+              src={DandyChair}
+              alt="DandyChair"
+              className="w-[200px] sm:w-[300px] h-[221px] sm:h-[375px]"
+            />
+            <p className="text-[#1a253c] dark:text-slate-300 pt-6 text-[20px]">
+              The Dandy chair{" "}
+            </p>
+            <p className="text-[#1a253c] dark:text-slate-300 pt-2 text-[18px]">
+              £250
+            </p>
+          </div>
+        </div>
+        <Link href={"#"} className=" mx-auto">
+          <button className="w-[260px]  bg-gray-300 text- text-[#1a253c] dark:bg-[#f9f9f93c]  px-8 py-4 sm:w-[220px]">
+            View collection
+          </button>
+        </Link>
+      </section>
+      <section className="mt-[52px] flex flex-col justify-center bg-white dark:bg-[#23314e] max-w-[1273px] sm:h-[364px] h-[320px] ">
+        <p className="md:pt-[68px] px-1 pt-4 text-center sm:text-[32px] text-[20px]  text-[#2A254B] dark:text-slate-200">
+          Join the club and get the benefits
+        </p>
+        <p className="pt-4 px-1 text-center max-w-[470px] mx-auto text-[#2A254B] dark:text-slate-200">
+          Sign up for our newsletter and receive exclusive offers on new ranges,
+          sales, pop up stores and more
+        </p>
+        <form className="pt-[72px] flex mx-auto">
+          <input
+            type="email"
+            className="outline-none  w-[170px] sm:w-[350px] md:w-[400px]  lg:w-[542px] py-4 pl-[16px] sm:pl-[32px] placeholder:pr-40 bg-slate-200 placeholder-[#2A254B] text-[#2A254B]"
+            placeholder="your@email.com"
+            required
+          />
+          <button
+            type="submit"
+            className="w-[100px] sm:w-[118px] bg-[#1a253c] text-slate-200 font-medium"
+          >
+            Sign up
+          </button>
+        </form>
+      </section>
+      <section className=" w-full md:flex    md:pt-[65px] pt-[20px]">
+        <div className=" md:w-[50%] w-[100%]  mx-auto md:p-10 sm:p-8 p-4">
+          <p className="sm:text-[32px]  text-[20px] leading-10 dark:text-white text-[#23314e]  pb-8">
+            From a studio in London to a global brand with over 400 outlets
+          </p>
+          <p>
+            When we started Avion, the idea was simple. Make high quality
+            furniture affordable and available for the mass market.
+          </p>
+          <p className="text-[18px] leading-7 pt-4 dark:text-white text-[#23314e]">
+            Handmade, and lovingly crafted furniture and homeware is what we
+            live, breathe and design so our Chelsea boutique become the hotbed
+            for the London interior design community.
+          </p>
+          <Link href={"#"} className="mx-auto">
+            <button className="w-[232px] mt-[62px] text-[#23314e] dark:bg-[#f9f9f9] px-8 py-4 sm:w-[220px]">
+              Get in touch
+            </button>
+          </Link>
+        </div>
+        <div className="md:w-[50%] w-[100%] ">
+          <Image src={HomeLast} alt="DandyChair" className=" h-full w-full" />
+        </div>
+      </section>
+    </main>
   );
 };
 

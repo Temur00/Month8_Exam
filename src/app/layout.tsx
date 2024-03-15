@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} light:bg-slate-100 dark:bg-[#1f2c47] transition`}
+        className={`${inter.className} bg-[#f9f9f9] dark:bg-[#1f2c47] transition`}
       >
         <Providers>
           <div
@@ -28,7 +28,7 @@ export default function RootLayout({
             className="light:bg-slate-100 dark:bg-[#1f2c47] transition"
           >
             <Header />
-            <main className="mt-32">{children}</main>
+            <main className="mt-[85px] sm:mt-28 md:mt-32">{children}</main>
             <Footer />
           </div>
         </Providers>
