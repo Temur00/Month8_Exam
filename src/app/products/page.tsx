@@ -29,21 +29,30 @@ const Products = () => {
               <select
                 name="all"
                 id="all"
-                className="inline-flex justify-center  dark:bg-[#253454] dark:text-slate-200 rounded-md border border-gray-300 shadow-sm px-4 py-2  text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-[120px] "
+                className="inline-flex justify-center  dark:bg-[#253454] dark:text-slate-200 rounded-md border border-gray-300 shadow-sm py-2  text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 w-[120px]"
               >
-                <option value="furniture" className="opacity-85">
+                <option
+                  value="furniture"
+                  className="opacity-85 text-[0.875rem]"
+                >
                   Furniture
                 </option>
-                <option value="homeware" className="opacity-85">
+                <option value="homeware" className="opacity-85 text-[0.875rem]">
                   Homeware
                 </option>
-                <option value="sofas" className="opacity-85">
+                <option value="sofas" className="opacity-85 text-[0.875rem]">
                   Sofas
                 </option>
-                <option value="lightFittings" className="opacity-85">
+                <option
+                  value="lightFittings"
+                  className="opacity-85 text-[0.875rem]"
+                >
                   Light fittings
                 </option>
-                <option value="accessories" className="opacity-85">
+                <option
+                  value="accessories"
+                  className="opacity-85 text-[0.875rem]"
+                >
                   Accessories
                 </option>
               </select>
