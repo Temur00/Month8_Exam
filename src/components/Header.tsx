@@ -45,10 +45,14 @@ const Header = () => {
       >
         <div className="flex justify-between items-center">
           <IoIosSearch className="w-[24px] h-[24px] cursor-pointer hidden md:block dark:text-slate-200 text-[#22202E] hover:text-slate-950" />
-          <p className="text-3xl font-normal text-[#101727] dark:text-white">
+          <p className="text-3xl md:pl-44 font-normal text-[#101727] dark:text-white">
             <Link href="/"> Avion</Link>
           </p>
           <div className="flex gap-4 jus items-center">
+            <div className=" gap-3 hidden md:flex">
+              <Link href="/about">About</Link>
+              <Link href="/Products">Products</Link>
+            </div>
             <IoIosSearch className="block md:hidden  w-[28px] h-[28px] cursor-pointer dark:text-slate-200 text-[#22202E] hover:text-slate-950" />
             <Link href="/cart">
               <AiOutlineShoppingCart className="md:block hidden  w-[24px] h-[24px] cursor-pointer dark:text-slate-200 text-[#22202E] hover:text-slate-950" />

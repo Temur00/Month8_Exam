@@ -66,37 +66,6 @@ const Cart = () => {
           £ {pricePerProduct * quantity}
         </p>
       </div>
-      {/* <div className="flex sm:justify-between py-[20px] items-center justify-center">
-        <div className="flex">
-          <Image
-            src={CartImage}
-            alt="CartImage"
-            className="sm:w-[109px] sm:h-[134px] w-[133px] h-[170px]"
-          />
-          <div className="flex flex-col">
-            <p className="text-[20px] text-[#2A254B] dark:text-slate-200 pl-[21px]">
-              Graystone vase
-            </p>
-            <p className="text-[14px] py-2 text-[#2A254B] dark:text-slate-200 pl-[21px] max-w-[179px]">
-              A timeless ceramic vase with a tri color grey glaze.
-            </p>
-            <p className=" text-[#2A254B] dark:text-slate-200 pl-[21px]">£85</p>
-            <div className="items-center gap-5 pl-[21px] flex sm:hidden">
-              <button onClick={decreaseQuantity}>-</button>
-              <p>{quantity}</p>
-              <button onClick={increaseQuantity}>+</button>
-            </div>
-          </div>
-        </div>
-        <div className="items-center gap-5 pl-[21px] hidden sm:flex">
-          <button onClick={decreaseQuantity}>-</button>
-          <p>{quantity}</p>
-          <button onClick={increaseQuantity}>+</button>
-        </div>
-        <p className="text-[18px] hidden sm:block">
-          £ {pricePerProduct * quantity}
-        </p>
-      </div> */}
 
       <div className="">
         <p className="sm:text-end text-center pt-4">Subtotal £ {totalPrice}</p>

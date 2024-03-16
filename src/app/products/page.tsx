@@ -167,7 +167,7 @@ const Products = () => {
                   htmlFor="angular-checkbox"
                   className="w-full py-3 ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
-                  Sofas{" "}
+                  Sofas
                 </label>
               </div>
             </li>

@@ -70,7 +70,7 @@ const ProDetails = () => {
               <p>50cm</p>
             </div>
           </div>
-          <div className="flex items-center mt-5">
+          <div className="flex items-center mt-5 md:pt-10">
             <div className="flex items-center gap-5 px-4">
               <button onClick={decreaseQuantity}>-</button>
               <p>{quantity}</p>
