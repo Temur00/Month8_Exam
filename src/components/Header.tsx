@@ -141,22 +141,22 @@ const Header = () => {
               Avion
             </p>
             <Link
-              href={"#"}
+              href="/about"
               className="text-[#505977] hover:text-[#110f16] cursor-pointer pt-4 hover:font-normal"
             >
               About us
             </Link>
             <Link
-              href={"#"}
+              href="/products"
               className="text-[#505977] hover:text-[#110f16]  cursor-pointer hover:font-normal"
             >
-              Contact
+              Products
             </Link>
             <Link
-              href={"#"}
+              href="/cart"
               className="text-[#505977] hover:text-[#110f16]  cursor-pointer hover:font-normal"
             >
-              Blog
+              Cart
             </Link>
           </div>
         </div>
