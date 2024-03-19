@@ -5,10 +5,13 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaRegUserCircle } from "react-icons/fa";
 import Link from "next/link";
 import ThemeSwitch from "./ThemeSwitch";
+import { useCartStore } from "@/store/useCartStore";
+import useFromStore from "@/store/useFromStore";
 
-const Header = () => {
+export default function Header({ onCartIconClick }: Props) {
   const [isOpen, setIsOpen] = useState(false);
   const [isShrunk, setIsShrunk] = useState(false);
+  const totalItems = useFromStore(useCartStore, (state) => state.totalItems);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,13 +54,16 @@ const Header = () => {
           <div className="flex gap-4 jus items-center">
             <div className=" gap-3 hidden md:flex">
               <Link href="/about">About</Link>
-              <Link href="/Products">Products</Link>
+              <Link href="/products">Products</Link>
             </div>
-            <IoIosSearch className="block md:hidden  w-[28px] h-[28px] cursor-pointer dark:text-slate-200 text-[#22202E] hover:text-slate-950" />
+            <IoIosSearch className="block md:hidden    w-[32px] h-[32px] cursor-pointer dark:text-slate-200 text-[#22202E] hover:text-slate-950" />
             <Link href="/cart">
-              <AiOutlineShoppingCart className="md:block hidden  w-[24px] h-[24px] cursor-pointer dark:text-slate-200 text-[#22202E] hover:text-slate-950" />
+              <AiOutlineShoppingCart className=" w-[28px] h-[28px] cursor-pointer dark:text-slate-200 text-[#22202E] hover:text-slate-950" />
+              <p className="flex items-center justify-center text-[14px] absolute w-[18px] h-[18px] bg-blue-600 text-slate-100 rounded-xl -mt-9 ml-4">
+                {totalItems}
+              </p>
             </Link>
-            <FaRegUserCircle className="md:block hidden w-[24px] h-[24px] cursor-pointer dark:text-slate-200 text-[#22202E] hover:text-slate-950" />
+            <FaRegUserCircle className="md:block hidden   w-[28px] h-[28px] cursor-pointer dark:text-slate-200 text-[#22202E] hover:text-slate-950" />
             <ThemeSwitch />
             <button
               onClick={handleClick}
@@ -167,6 +173,6 @@ const Header = () => {
       </div>
     </div>
   );
-};
+}
 
-export default Header;
+// export default Header;

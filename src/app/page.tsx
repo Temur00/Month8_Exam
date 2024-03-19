@@ -25,7 +25,7 @@ const Home = () => {
             retail brand with nice fonts, tasteful colors and a beautiful way to
             display things digitally using modern web technologies.
           </p>
-          <Link href={"#"}>
+          <Link href={"/products"}>
             <button className="w-[232px] mx-auto  block sm:hidden mt-[32px] text-[#fff] bg-[#f9f9f93c]  px-8 py-4 sm:w-[220px]">
               View collection
             </button>
@@ -142,9 +142,11 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <button className="w-[260px]  mx-auto  bg-gray-300 text- text-[#1a253c] dark:bg-[#f9f9f93c]  px-8 py-4 sm:w-[220px]">
-          View collection
-        </button>
+        <Link href={"/products"} className="mx-auto ">
+          <button className="w-[260px]   bg-gray-300 text- text-[#1a253c] dark:bg-[#f9f9f93c]  px-8 py-4 sm:w-[220px]">
+            View collection
+          </button>
+        </Link>
       </section>
       <section className="flex flex-col">
         <p className=" text-[#1a253c] dark:text-slate-300 flex justify-center md:justify-start md:pt-[80px] pt-12 md:text-3xl text-2xl">
@@ -191,7 +193,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <Link href={"#"} className=" mx-auto">
+        <Link href={"/products"} className=" mx-auto">
           <button className="w-[260px]  bg-gray-300 text- text-[#1a253c] dark:bg-[#f9f9f93c]  px-8 py-4 sm:w-[220px]">
             View collection
           </button>
