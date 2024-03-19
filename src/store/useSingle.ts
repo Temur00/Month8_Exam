@@ -1,6 +1,6 @@
 import axios from "axios";
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+// import { persist } from "zustand/middleware";
 type storeType = {
   loading: boolean;
   datas: any;

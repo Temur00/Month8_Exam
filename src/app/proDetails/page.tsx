@@ -1,7 +1,7 @@
 "use client";
 import { DandyChair } from "@/assets";
 import { useCartStore } from "@/store/useCartStore";
-import { useProductsStore } from "@/store/useProductStore";
+// import { useProductsStore } from "@/store/useProductStore";
 import allDatas from "@/store/useSingle";
 import Image from "next/image";
 // import Link from "next/link";
@@ -10,17 +10,17 @@ import { CiCreditCard1 } from "react-icons/ci";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { PiPlantBold } from "react-icons/pi";
 import { TbTruckDelivery } from "react-icons/tb";
-type al = {
-  cart: null | string;
-};
+// type al = {
+//   cart: null | string;
+// };
 
-const ProDetails = ({ product }: Props) => {
+const ProDetails = ({ product }: any) => {
   const [quantity, setQuantity] = useState(1);
 
   const pricePerProduct = 85;
   const [totalPrice, setTotalPrice] = useState(pricePerProduct);
 
-  let [c, setC] = useState(1);
+  // let [c, setC] = useState(1);
   let { iddata, getDatas } = allDatas();
   const addToCart = useCartStore((state) => state.addToCart);
 

@@ -5,7 +5,7 @@ import allDatas from "@/store/useSingle";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-const Products = ({ product }: Props) => {
+const Products = ({ product }: any) => {
   const [isOpenSorting, setIsOpenSorting] = useState(false);
   const { products, isLoading, error, fetchData } = useProductsStore();
   const [displayCount, setDisplayCount] = useState(6);

@@ -1,16 +1,16 @@
 "use client";
-import { CartImage } from "@/assets";
+// import { CartImage } from "@/assets";
 import { useCartStore } from "@/store/useCartStore";
 import useFromStore from "@/store/useFromStore";
-import { Product } from "@/types/Product";
-import Image from "next/image";
+// import { Product } from "@/types/Product";
+// import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
 
-const Cart = ({ product }: Props) => {
+const Cart = ({ product }: any) => {
   const [quantity, setQuantity] = useState(1);
-  const [totalPrice, setTotalPrice] = useState();
-  const [cartState, setCartState] = useState<Product[]>([]);
+  // const [totalPrice, setTotalPrice] = useState();
+  // const [cartState, setCartState] = useState<Product[]>([]);
   const cart = useFromStore(useCartStore, (state) => state.cart);
 
   // CART ADD
