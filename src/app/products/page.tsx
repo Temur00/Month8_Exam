@@ -1,16 +1,20 @@
 "use client";
 import { useCartStore } from "@/store/useCartStore";
-import { useProductsStrore } from "@/store/useProductStore";
+import { useProductsStore } from "@/store/useProductStore";
+import allDatas from "@/store/useSingle";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const Products = ({ product }: Props) => {
   const [isOpenSorting, setIsOpenSorting] = useState(false);
-  const { products, isLoading, error, fetchData } = useProductsStrore();
+  const { products, isLoading, error, fetchData } = useProductsStore();
   const [displayCount, setDisplayCount] = useState(6);
+  let { getIddata } = allDatas();
 
   useEffect(() => {
     fetchData();
   }, [fetchData]);
+
   // Add to cart
   const addToCart = useCartStore((state) => state.addToCart);
 
@@ -288,11 +292,17 @@ const Products = ({ product }: Props) => {
                 {products.slice(0, displayCount).map((product) => (
                   <div key={product.id}>
                     <div className="group overflow-hidden">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className=" w-[163px] sm:w-[300px] h-[201px] sm:h-[375px]"
-                      ></img>
+                      <Link
+                        href={"/proDetails"}
+                        onClick={() => getIddata(product.id)}
+                        key={product.id}
+                      >
+                        <img
+                          src={product.image}
+                          alt={product.name}
+                          className=" w-[163px] sm:w-[300px] h-[201px] sm:h-[375px]"
+                        ></img>
+                      </Link>
                       <div className="opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
                         <button
                           onClick={() => addToCart(product)}

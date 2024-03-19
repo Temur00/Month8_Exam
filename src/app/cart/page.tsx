@@ -9,14 +9,12 @@ import { FaTrashAlt } from "react-icons/fa";
 
 const Cart = ({ product }: Props) => {
   const [quantity, setQuantity] = useState(1);
-  // const [totalPrice, setTotalPrice] = useState(pricePerProduct);
+  const [totalPrice, setTotalPrice] = useState();
   const [cartState, setCartState] = useState<Product[]>([]);
   const cart = useFromStore(useCartStore, (state) => state.cart);
 
   // CART ADD
-  // const cart = useCartStore((state) => state.cart);
 
-  // Total price products
   let total = 0;
   if (cart) {
     total = cart.reduce(
@@ -24,31 +22,23 @@ const Cart = ({ product }: Props) => {
       0
     );
   }
-  // useEffect(() => {
-  //   setCartState(cart);
-  // }, [cart]);
-  // CART Remove
+
   const removeFromCart = useCartStore((state) => state.removeFromCart);
 
   const increaseQuantity = () => {
     setQuantity(quantity + 1);
-    setTotalPrice(totalPrice + pricePerProduct);
+    // setTotalPrice(totalPrice + pricePerProduct);
   };
 
   const decreaseQuantity = () => {
     if (quantity > 1) {
       setQuantity(quantity - 1);
-      setTotalPrice(totalPrice - pricePerProduct);
+      // setTotalPrice(totalPrice - pricePerProduct);
     }
   };
 
   return (
     <section>
-      {/* <ul>
-        {cart?.map((product) => (
-          <div key={product.id} product={product} />
-        ))}
-      </ul> */}
       <div className="container mx-auto lg:px-[62px] px-[20px]">
         <p className="sm:text-[36px] text-[24px] md:pt-[64px] text-center md:text-start pb-[40px] sm:pb-[50px]">
           Your shopping cart

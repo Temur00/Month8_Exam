@@ -1,18 +1,32 @@
 "use client";
 import { DandyChair } from "@/assets";
+import { useCartStore } from "@/store/useCartStore";
+import { useProductsStore } from "@/store/useProductStore";
+import allDatas from "@/store/useSingle";
 import Image from "next/image";
-import Link from "next/link";
-import React, { useState } from "react";
+// import Link from "next/link";
+import React, { useEffect, useState } from "react";
 import { CiCreditCard1 } from "react-icons/ci";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { PiPlantBold } from "react-icons/pi";
 import { TbTruckDelivery } from "react-icons/tb";
+type al = {
+  cart: null | string;
+};
 
-const ProDetails = () => {
+const ProDetails = ({ product }: Props) => {
   const [quantity, setQuantity] = useState(1);
+
   const pricePerProduct = 85;
   const [totalPrice, setTotalPrice] = useState(pricePerProduct);
 
+  let [c, setC] = useState(1);
+  let { iddata, getDatas } = allDatas();
+  const addToCart = useCartStore((state) => state.addToCart);
+
+  useEffect(() => {
+    getDatas();
+  }, []);
   const increaseQuantity = () => {
     setQuantity(quantity + 1);
     setTotalPrice(totalPrice + pricePerProduct);
@@ -29,19 +43,26 @@ const ProDetails = () => {
     <div className="container md:mx-auto  lg:px-[62px] px-[10px]">
       <div className="justify-center mx-auto  sm:flex  md:py-[50px] pt-[0px] pb-[20px]">
         <div className="  w-[100%] sm:w-[50%]">
-          <Image
-            src={DandyChair}
-            alt="DandyChair"
+          {/* <Image
+            src={iddata.image}
+            alt={iddata.title}
             className="h-[390px] w-[100%] sm:w-[550px] sm:h-[650px] md:h-[750px] md:w-[729px]"
-          />
+          /> */}
+          <img
+            src={iddata.image}
+            alt={iddata.name}
+            className=" h-[390px] w-[100%] sm:w-[550px] sm:h-[650px] md:h-[750px] md:w-[729px]"
+          ></img>
         </div>
         <div className=" w-[100%] sm:w-[60%] md:w-[50%] md:p-10 sm:p-8 pl-4 pt-4">
           <p className="sm:text-[32px] text-[24px] leading-10 dark:text-slate-200 text-[#1a253c] pb-8">
-            The Dandy Chair
+            {iddata.name}{" "}
           </p>
-          <p className="text-2xl dark:text-slate-200 text-[#1a253c]">£250</p>
+          <p className="text-2xl dark:text-slate-200 text-[#1a253c]">
+            {iddata.price}
+          </p>
           <p className="  md:pt-[80px]  pt-[20px] dark:text-slate-200 text-[#1a253c]">
-            Description
+            {iddata.description}
           </p>
           <p className="text-[18px] leading-7 dark:text-slate-200 text-[#1a253c]">
             A new era in eco friendly furniture with Avelon, the French luxury
@@ -78,6 +99,7 @@ const ProDetails = () => {
             </div>
             <button
               type="submit"
+              onClick={() => addToCart(product)}
               className="w-[232px] mx-auto   text-[#fff] dark:bg-[#f9f9f93c] bg-[#1a253c] px-8 py-4"
             >
               Add to cart

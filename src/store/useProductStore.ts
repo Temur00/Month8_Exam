@@ -17,7 +17,7 @@ const INITIAL_STATE: State = {
   error: null,
 };
 
-export const useProductsStrore = create<State & Actions>((set) => ({
+export const useProductsStore = create<State & Actions>((set) => ({
   products: INITIAL_STATE.products,
   isLoading: INITIAL_STATE.isLoading,
   error: INITIAL_STATE.error,
