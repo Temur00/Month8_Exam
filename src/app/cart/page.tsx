@@ -59,7 +59,7 @@ const Cart = ({ product }: any) => {
         {cart?.map((product) => (
           <div
             key={product.id}
-            product={product}
+            // product={product}
             className="flex sm:justify-between py-[20px] items-center justify-center"
           >
             <div className="flex">
