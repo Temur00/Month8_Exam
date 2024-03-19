@@ -115,6 +115,8 @@ const ProDetails = ({ product }: Props) => {
           <div>
             <Image
               src={DandyChair}
+              width={200}
+              height={200}
               alt="DandyChair"
               className="w-[185px] sm:w-[300px] h-[201px] sm:h-[375px]"
             />
@@ -128,6 +130,8 @@ const ProDetails = ({ product }: Props) => {
           <div>
             <Image
               src={DandyChair}
+              width={200}
+              height={200}
               alt="DandyChair"
               className="w-[185px] sm:w-[300px] h-[201px] sm:h-[375px]"
             />
@@ -141,6 +145,8 @@ const ProDetails = ({ product }: Props) => {
           <div>
             <Image
               src={DandyChair}
+              width={200}
+              height={200}
               alt="DandyChair"
               className="w-[185px] sm:w-[300px] h-[201px] sm:h-[375px]"
             />
@@ -154,6 +160,8 @@ const ProDetails = ({ product }: Props) => {
           <div>
             <Image
               src={DandyChair}
+              width={200}
+              height={200}
               alt="DandyChair"
               className="w-[185px] sm:w-[300px] h-[201px] sm:h-[375px]"
             />
